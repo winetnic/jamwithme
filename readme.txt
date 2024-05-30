@@ -1,3 +1,11 @@
+Nicolas Winet 
+Stolzestrasse 3
+8006 Zürich
+079 567 37 39 
+winetnic@stundets.zhaw.ch
+TZDSb
+
+
 Motivation: Musicians often need instrumental versions of songs to practice or perform along with. Creating an application that automatically removes vocals from a song can save time and provide an essential tool for musicians.
 
 Problem Statement: The project aims to develop a web application where users can upload a .wav file, and the application processes the audio to remove the vocals, generating a jam track.

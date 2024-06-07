@@ -15,7 +15,7 @@ Relevance: This project leverages both audio processing and web development tech
 -----------------
 
 Requirements:
-Python 3.10.11
+Python (env) 3.10.11
 pip install spleeter
 pip install streamlit
 pip install protobuf==3.20.0
@@ -31,19 +31,19 @@ Sample Data (.wav)
 
 POP - Aloe Blacc - I Need A Dollar
 Rock - Foo Fighters - The Pretender
-Reggea - Gentleman - The Light Within
+Reggae - Gentleman - The Light Within
 Soul - Jamie Lidell - Another Day
 Electronica - Jamiroquai - Hot Tequila Brown
-Rap - urassic 5 - Work It Out
+Rap - Jurassic 5 - Work It Out
 Pop - Puggy - When You Know
 Rock - The Black Keys - Lonely Boy
 
 Sample Data (Youtube)
 
 Jazz - Norah Jones - https://www.youtube.com/watch?v=fd02pGJx0s0
-TriopHop - Massive Attack - https://www.youtube.com/watch?v=u7K72X4eo_s
+Trip Hop - Massive Attack - https://www.youtube.com/watch?v=u7K72X4eo_s
 Pop - Michael Jackson - https://www.youtube.com/watch?v=QNJL6nfu__Q
-HipHop - Eminem - https://www.youtube.com/watch?v=eJO5HU_7_1w
+Hip Hop - Eminem - https://www.youtube.com/watch?v=eJO5HU_7_1w
 Country - Chris Stableton - https://www.youtube.com/watch?v=4zAThXFOy2c
 Punk - Sex Pistols - https://www.youtube.com/watch?v=yqrAPOZxgzU
 
@@ -74,3 +74,31 @@ Post-processing: The separated waveforms may undergo additional post-processing 
 
 5. Output
 The final output is a set of audio files corresponding to the separated sources (e.g., vocals and accompaniment).
+
+-----------------
+
+Validation of the Model
+To ensure the robustness and reliability of the JamWithMe model for separating vocals from instrumental tracks, I conducted a comprehensive validation process. This involved both human evaluations and numerical analyses to compare the model's performance against benchmarks.
+
+Human Evaluation
+
+I designed a survey to gather qualitative feedback from users, including both musicians and non-musicians. The survey presented participants with original music tracks and their separated component (instrumental). Participants were asked to rate the the purity of the instrumental, and their overall satisfaction with the separation quality. This human-centered approach helps me understand how well the model meets user expectations and identify areas for improvement.
+
+Example of Survey Questions:
+
+Purity of Instrumentals:
+How pure is the instrumental track? (1-5)
+Overall Satisfaction:
+How satisfied are you with the separation quality? (1-5)
+Please provide any specific feedback or comments.
+
+Numerical Methods
+
+To complement the human evaluation, I employed numerical methods to quantitatively assess the model's performance. One key metric used was the Signal-to-Distortion Ratio (SDR), which measures the quality of the separated signals by comparing them to the original tracks. 
+
+Comparative Analysis
+
+I also compared the model's performance with state-of-the-art benchmarks such as Open-Unmix and Demucs. By running these benchmark models on the same dataset and comparing the results, I can objectively evaluate the relative performance of my model in terms of both numerical metrics and human satisfaction.
+
+Results
+By combining human evaluations with numerical analyses, I aim to provide a comprehensive validation of the JamWithMe model. This multi-faceted approach ensures that my model not only performs well in terms of metrics but also meets user expectations in real-world applications. The insights gained from this validation process will guide future improvements and help me achieve the highest possible quality in instrumental separation.
